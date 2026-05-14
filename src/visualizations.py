@@ -16,26 +16,28 @@ SUBTEXT = "#9ca3af"
 
 # ── Bubble / category colors ─────────────────────────────────────────────────
 
-MINT_GREEN    = "#8ccfb9"
-SOFT_ORANGE   = "#faa78a"
-DUSTY_BLUE    = "#aeb7d6"
-SOFT_PINK     = "#dca2cb"
-LIGHT_LIME    = "#b6d27a"
-PASTEL_YELLOW = "#fee16b"
+BLUE          = "#2563eb"
+GRAY          = "#6b7280"
+
+LIGHT_BLUE    = "#93c5fd"
+BLACK         = "#0a0a0a"
+
+
+
 
 # ── Core comparison colors ────────────────────────────────────────────────────
 
-CLAIM   = DUSTY_BLUE
-OPINION = SOFT_ORANGE
+CLAIM   = BLUE
+OPINION = GRAY
 
 # ── Supporting palette ────────────────────────────────────────────────────────
 
-SUCCESS    = MINT_GREEN
-NEUTRAL    = SOFT_PINK
+SUCCESS    = BLUE
+NEUTRAL    = LIGHT_BLUE
 
-DUR_COLORS = [PASTEL_YELLOW, LIGHT_LIME, DUSTY_BLUE]   # short / medium / long
+DUR_COLORS = [GRAY, BLACK, LIGHT_BLUE]   # short / medium / long
 
-HEATMAP_CMAP = LinearSegmentedColormap.from_list("pastel_corr", [BG, DUSTY_BLUE])
+HEATMAP_CMAP = LinearSegmentedColormap.from_list("pastel_corr", [BG, BLUE])
 
 plt.rcParams.update({
     "figure.facecolor":   BG,
